@@ -11,7 +11,7 @@ app.use(cors());
 
 // ----------------------------
 // MongoDB connection
-const uri = process.env.MONGODB_URI || "YOUR_MONGODB_ATLAS_CONNECTION_STRING";
+const uri = process.env.MONGODB_URI || "mongodb+srv://ajmuser:ajm2580@anto.p2an9cp.mongodb.net/?retryWrites=true&w=majority&appName=anto";
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("MongoDB connected!"))
   .catch(err => console.error("MongoDB connection error:", err));
